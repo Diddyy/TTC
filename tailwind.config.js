@@ -16,6 +16,7 @@ module.exports = {
         'default-text': '#736969',
         'aftercare-blue': '#0092b1',
         'holistic-purple': '#a380b8',
+        'appointment-text': '#fddbaf',
       },
       backgroundImage: {
         'beauty-banner-lg': "url('../src/assets/banners/beauty-lg.jpg')",
