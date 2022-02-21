@@ -18,18 +18,35 @@
                         <img src="assets/branding/TTC_Secondary Logo on white_RGB.svg" class="w-96"/>
                     </div>
                     <div class="flex items-center justify-end md:flex-1 lg:w-0">
-                        <a href="#" class="whitespace-nowrap text-base text-4xl font-light text-primary-blue">07561 633945</a>
+                        <a href="#" class="block md:hidden">
+                            <div class="space-y-2">
+                                <div class="w-8 h-0.5 bg-primary-blue"></div>
+                                <div class="w-8 h-0.5 bg-primary-blue"></div>
+                                <div class="w-8 h-0.5 bg-primary-blue"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="hidden md:block whitespace-nowrap text-base text-4xl font-light text-primary-blue">07561 633945</a>
                     </div>
                 </div>
             </div>
 
             <nav class="bg-gradient-to-r from-primary-green via-primary-turquoise to-primary-blue">
-                <div class="container mx-auto">
-                    <div class="flex justify-end">
-                        <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Home</a>
-                        <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Treatments</a>
-                        <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">After Care Advice</a>
-                        <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Get In Touch</a>
+                <div class="block md:hidden">
+                    <div class="container mx-auto">
+                        <div class="flex justify-center">
+                            <a href="#" class="text-white uppercase px-3 py-2 text-3xl font-normal">07561 633945</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="container mx-auto">
+                        <div class="flex justify-end">
+                            <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Home</a>
+                            <a href="#treatments" class="text-white uppercase px-3 py-2 text-sm font-normal">Treatments</a>
+                            <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">After Care Advice</a>
+                            <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Get In Touch</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -40,12 +57,12 @@
                 <img src="assets/carousel/TTC_Website Carousel_Large1.jpg" class="w-full h-full"/>
             </section>
 
-            <section class="bg-pale-green relative">
+            <section class="bg-pale-green bg-floral-lt bg-contain bg-no-repeat relative" style="background-size: 60% 160%; background-position: right center;">
                 <div class="container mx-auto px-4 py-4">
                     <div class="flex flex-wrap my-8">
                         <div class="md:w-2/3 flex flex-col items-start">
-                            <h2 class="text-6xl font-gizmo text-aftercare-blue">About Me</h2>
-                            <p class="mt-4 lg:mt-6 mx-auto h4 text-gray-700">My name is Lesley, and I am a fully qualified beauty and holistic therapist practicing in Poole, where I set up my home salon to recognise a life-long passion. <br><br>My journey to help people to feel good began when I enrolled in asports therapy college course where I studied massage, nutrition and exercise. I decided to combine my training with holistic treatments after experiencing their numerous benefits for myself.<br><br> To complement these therapies, I offer a range of beauty treatments which are designed to enhance the overall feeling of wellbeing. These treatments all utilise cruelty-free products in line with my ethos.<br><br> Before commencing any treatment, I carry out a consultation to discuss the treatment you would like, its suitability for you and the process involved. Treatments are carried out in a relaxing, calm environment where time, care and attentiveness are essential for the overall experience.</p>
+                            <h2 class="text-6xl font-gizmo text-primary-turquoise">About Me</h2>
+                            <p class="mt-4 lg:mt-6 mx-auto h4">My name is Lesley, and I am a fully qualified beauty and holistic therapist practicing in Poole, where I set up my home salon to recognise a life-long passion. <br><br>My journey to help people to feel good began when I enrolled in asports therapy college course where I studied massage, nutrition and exercise. I decided to combine my training with holistic treatments after experiencing their numerous benefits for myself.<br><br> To complement these therapies, I offer a range of beauty treatments which are designed to enhance the overall feeling of wellbeing. These treatments all utilise cruelty-free products in line with my ethos.<br><br> Before commencing any treatment, I carry out a consultation to discuss the treatment you would like, its suitability for you and the process involved. Treatments are carried out in a relaxing, calm environment where time, care and attentiveness are essential for the overall experience.</p>
                         </div>
                         <div class="md:w-1/3 flex flex-col items-start">
                             Picture
@@ -54,70 +71,114 @@
                 </div>
             </section>
             
-            <section class="relative">
-                <div class="bg-beauty-banner-lg bg-contain bg-no-repeat md:bg-cover min-w-full py-4"><div class="container mx-auto px-4"><span class="inline-block align-middle font-gizmo text-white text-6xl">Beauty Treatments</span></div></div>
+            <section class="relative" id="treatments">
+                <div class="bg-beauty-banner-lg bg-no-repeat bg-cover bg-right min-w-full py-4"><div class="container mx-auto px-4"><span class="inline-block align-middle font-gizmo text-white text-3xl md:text-6xl">Beauty Treatments</span></div></div>
                 <div class="container mx-auto px-4 py-4">
                     <div class="flex flex-wrap my-8">
                         <div class="w-full md:w-1/3 flex flex-col items-start">
                             <div class="w-full py-4">
                                 <h2 class="font-nordiqueproregular text-primary-green text-2xl font-normal mb-2">Waxing</h2>
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Eyebrows</p>
+                                    <p class="text-md font-semibold">Eyebrows</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£7</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Lip or chin</p>
+                                    <p class="text-md font-semibold">Lip or chin</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£7</span>
                                 </div>
 
-                                <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Lip and chin</p>
-                                    <span class="text-beautytreatment-blue font-bold text-md">£10</span>
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
                                 </div>
 
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Bikini</p>
+                                    <p class="text-md font-semibold">Lip and chin</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£10</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Full leg</p>
+                                    <p class="text-md font-semibold">Bikini</p>
+                                    <span class="text-beautytreatment-blue font-bold text-md">£10</span>
+                                </div>
+
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
+                                <div class="flex flex-row justify-between items-start">
+                                    <p class="text-md font-semibold">Full leg</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£20</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Full leg and bikini</p>
+                                    <p class="text-md font-semibold">Full leg and bikini</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£30</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Half leg</p>
+                                    <p class="text-md font-semibold">Half leg</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£15</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Underarm</p>
+                                    <p class="text-md font-semibold">Underarm</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£10</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Forearm</p>
+                                    <p class="text-md font-semibold">Forearm</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£10</span>
                                 </div>
 
-                                <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Back</p>
-                                    <span class="text-beautytreatment-blue font-bold text-md">£20</span>
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
                                 </div>
 
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Chest</p>
+                                    <p class="text-md font-semibold">Back</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£20</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Back and chest</p>
+                                    <p class="text-md font-semibold">Chest</p>
+                                    <span class="text-beautytreatment-blue font-bold text-md">£20</span>
+                                </div>
+
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
+                                <div class="flex flex-row justify-between items-start">
+                                    <p class="text-md font-semibold">Back and chest</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£35</span>
                                 </div>
                             </div>
@@ -125,17 +186,25 @@
                                 <h2 class="font-nordiqueproregular text-primary-green text-2xl font-normal my-2">Lashes</h2>
                                 
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Lash lift</p>
+                                    <p class="text-md font-semibold">Lash lift</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£30</span>
                                 </div>
 
-                                <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Lash tint</p>
-                                    <span class="text-beautytreatment-blue font-bold text-md">£15</span>
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
                                 </div>
 
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">Lift and tint</p>
+                                    <p class="text-md font-semibold">Lash tint</p>
+                                    <span class="text-beautytreatment-blue font-bold text-md">£15</span>
+                                </div>
+
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
+                                <div class="flex flex-row justify-between items-start">
+                                    <p class="text-md font-semibold">Lift and tint</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£40</span>
                                 </div>
                             </div>
@@ -144,14 +213,18 @@
                                 
                                 <div class="flex flex-row justify-between items-start">
                                     <div>
-                                        <p class="text-md text-gray-600 font-semibold">Back, neck & shoulder</p>
+                                        <p class="text-md font-semibold">Back, neck & shoulder</p>
                                         <p class="text-md text-gray-600 font-thin">(30 mins)</p>
                                     </div>
                                     <span class="text-beautytreatment-blue font-bold text-md">£40</span>
                                 </div>
 
+                                <div class="block md:hidden py-1">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+
                                 <div class="flex flex-row justify-between items-start">
-                                    <p class="text-md text-gray-600 font-semibold">With hot stones</p>
+                                    <p class="text-md font-semibold">With hot stones</p>
                                     <span class="text-beautytreatment-blue font-bold text-md">£35</span>
                                 </div>
                             </div>
@@ -160,18 +233,18 @@
                             <h2 class="font-nordiqueproregular text-primary-green text-2xl font-normal my-4">Facial treatments</h2>
 
                             <div class="mb-14">
-                                <div class="text-gray-700 font-semibold mb-4">Express facial - £30</div>
-                                <p class="text-gray-600">Skin is double cleansed removing any build-up of oils and debris before a mask is applied to clear blocked pores. This is then followed by a moisturiser and SPF.</p>
+                                <div class="font-semibold mb-4">Express facial - £30</div>
+                                <p>Skin is double cleansed removing any build-up of oils and debris before a mask is applied to clear blocked pores. This is then followed by a moisturiser and SPF.</p>
                             </div>
 
                             <div class="mb-14">
-                                <div class="text-gray-700 font-semibold mb-4">Deluxe facial - £40</div>
-                                <p class="text-gray-600">This treatment will freshen the skin with a gentle cleanser followed by removal of dead skin cells. A relaxing mask will infuse the skin with nutrients before the application of hydrating moisturisers and a SPF.<br><br>The products which I use are suitable for any skin type and condition as they are chosen according to the clientʼs skin care needs.</p>
+                                <div class="font-semibold mb-4">Deluxe facial - £40</div>
+                                <p>This treatment will freshen the skin with a gentle cleanser followed by removal of dead skin cells. A relaxing mask will infuse the skin with nutrients before the application of hydrating moisturisers and a SPF.<br><br>The products which I use are suitable for any skin type and condition as they are chosen according to the clientʼs skin care needs.</p>
                             </div>
 
                             <div class="mb-14">
-                                <div class="text-gray-700 font-semibold mb-4">High frequency facial - £50</div>
-                                <p class="text-gray-600">This treatment combines the deluxe facial with a high frequency treatment. During the treatment an electrical charge is safely delivered to the face muscles which helps to strengthen them and tighten areas of reduced elasticity, giving a more toned and youthful appearance.</p>
+                                <div class="font-semibold mb-4">High frequency facial - £50</div>
+                                <p>This treatment combines the deluxe facial with a high frequency treatment. During the treatment an electrical charge is safely delivered to the face muscles which helps to strengthen them and tighten areas of reduced elasticity, giving a more toned and youthful appearance.</p>
                             </div>
                         </div>
                     </div>
@@ -179,22 +252,22 @@
             </section>
 
             <section class="relative">
-                <div class="bg-holistic-banner-lg bg-contain bg-no-repeat md:bg-cover min-h-24 min-w-full py-4"><div class="container mx-auto px-4"><span class="inline-block align-middle font-gizmo text-white text-6xl">Holistic Treatments</span></div></div>
+                <div class="bg-holistic-banner-lg bg-no-repeat bg-cover bg-right min-w-full py-4"><div class="container mx-auto px-4"><span class="inline-block align-middle font-gizmo text-white text-3xl md:text-6xl">Holistic Treatments</span></div></div>
                 <div class="container mx-auto px-4 py-4">
                     <div class="flex flex-wrap my-8">
                         <div class="mb-14">
-                            <div class="text-gray-700 font-semibold mb-4">Reiki - £35</div>
-                            <p class="text-gray-600">This treatment works on the whole self; mind, body and emotions. There is no set time limit for this treatment as it is decided by the bodyʼs own need. Typically, up to 50 minutes.<br><br>During the treatment you remain fully clothed under a blanket. Your practitioner gently places their hands palm down above or lightly on your body in specific energy locations. No pressure, massage or manipulation is involved.</p>
+                            <div class="font-semibold mb-4">Reiki - £35</div>
+                            <p>This treatment works on the whole self; mind, body and emotions. There is no set time limit for this treatment as it is decided by the bodyʼs own need. Typically, up to 50 minutes.<br><br>During the treatment you remain fully clothed under a blanket. Your practitioner gently places their hands palm down above or lightly on your body in specific energy locations. No pressure, massage or manipulation is involved.</p>
                         </div>
 
                         <div class="mb-14">
-                            <div class="text-gray-700 font-semibold mb-4">Crystal therapy including chakra balancing - £45</div>
-                            <p class="text-gray-600">This is an ancient practice that works with the natural power of crystals and gemstones to help improve health and wellbeing. Crystal healing is a safe, non-invasive therapy that works with the bodyʼs own energy to help with all kinds of ailments.</p>
+                            <div class="font-semibold mb-4">Crystal therapy including chakra balancing - £45</div>
+                            <p>This is an ancient practice that works with the natural power of crystals and gemstones to help improve health and wellbeing. Crystal healing is a safe, non-invasive therapy that works with the bodyʼs own energy to help with all kinds of ailments.</p>
                         </div>
 
                         <div class="">
-                            <div class="text-gray-700 font-semibold mb-4">Chakra balancing - £25</div>
-                            <p class="text-gray-600">Our energy can be depleted in a number of ways, affected by illness or negative emotions. This in turn can cause mental stress, low mood and self-esteem leading to further problems.<br><br>Using crystals, I will find which of your chakras are out of line and rebalance them leaving you feeling more energised and calm.</p>
+                            <div class="font-semibold mb-4">Chakra balancing - £25</div>
+                            <p>Our energy can be depleted in a number of ways, affected by illness or negative emotions. This in turn can cause mental stress, low mood and self-esteem leading to further problems.<br><br>Using crystals, I will find which of your chakras are out of line and rebalance them leaving you feeling more energised and calm.</p>
                         </div>
                     </div>
                 </div>
@@ -203,10 +276,10 @@
         </main>
 
         <footer>
-            <section class="relative h-64 md:h-96">
-                <div class="flex bg-signoff-lg bg-contain bg-no-repeat md:bg-cover w-full h-full">
+            <section class="relative w-full" style="height: 36rem">
+                <div class="flex bg-signoff-lg bg-contain md:bg-cover bg-no-repeat bg-right w-full h-full">
                     <div class="container mx-auto my-auto px-4">
-                        <h2 class="text-5xl md:text-7xl font-gizmo text-white w-56 md:w-96" style="text-shadow: 2px 2px 1px #0000005c;">I look forward to seeing you...</h2>
+                        <h2 class="text-2xl sm:text-4xl md:text-7xl font-gizmo text-white w-56 sm:w-96" style="text-shadow: 2px 2px 1px #0000005c;">I look forward to seeing you...</h2>
                     </div>
                 </div>
             </section>
