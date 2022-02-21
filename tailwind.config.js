@@ -3,14 +3,17 @@ module.exports = {
   theme: {
     fontFamily: {
       gizmo: ["Gizmo", "sans-serif"],
-      nordiqueproregular: ["NordiqueProRegular", "sans-serif"]
+      nordiqueproregular: ["NordiqueProRegular", "sans-serif"],
+      sourcesanspro: ["Source Sans Pro", "sans-serif"],
     },
     extend: {
       colors: {
-        'primary-blue': '#125da9',
-        'aboutme-green': '#e6f6f4',
-        'beautytreatment-blue': '#0093b1',
-        'beautytreatment-green': '#01a28d',
+        'primary-blue': '#0E3E8A',
+        'primary-green': '#01A28D',
+        'primary-turquoise': '#0092B1',
+        'primary-lightblue': '#005CA8',
+        'pale-green': '#E6F6F4',
+        'default-text': '#736969',
         'aftercare-blue': '#0092b1',
         'holistic-purple': '#a380b8',
         'gradient-start': '#01a28d',
