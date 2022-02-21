@@ -15,10 +15,16 @@
             height: auto;
             max-height: 700px !important;
         }
-
+        .seeyousoon-banner {
+            height: 36rem;
+            }
+        
         @media screen and (max-width: 640px) {
             .flickity-button {
                 display: none;
+            }
+            .seeyousoon-banner {
+                height: 15rem;
             }
         }
     </style>
@@ -358,8 +364,8 @@
         </main>
 
         <footer>
-            <section class="relative w-full" style="height: 36rem">
-                <div class="flex bg-signoff-lg bg-contain md:bg-cover bg-no-repeat bg-right w-full h-full">
+            <section class="relative w-full h-auto" >
+                <div class="flex bg-signoff-lg bg-contain md:bg-cover bg-no-repeat bg-right w-full h-full seeyousoon-banner">
                     <div class="container mx-auto my-auto px-4">
                         <h2 class="text-2xl sm:text-4xl md:text-7xl font-gizmo text-white w-56 sm:w-96" style="text-shadow: 2px 2px 1px #0000005c;">I look forward to seeing you...</h2>
                     </div>
