@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Gizmo";
+    src: url("../src/assets/fonts/Gizmo.ttf");
+}
+
+@font-face {
+    font-family: "NordiqueProRegular";
+    src: url("../src/assets/fonts/NordiqueProRegular.woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
