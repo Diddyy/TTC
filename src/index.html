@@ -32,22 +32,53 @@
 </head>
 <body class="font-sourcesanspro text-default-text">
     <div class="relative flex flex-col justify-between">
-        <header class="bg-white sticky top-0 z-30">
+        <header x-data="{ openMenu: false }" class="bg-white sticky top-0 z-30">
             <div class="container mx-auto px-4">
                 <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
                     <div class="flex justify-start lg:w-0 lg:flex-1">
                         <img src="assets/branding/TTC_Secondary Logo on white_RGB.svg" class="w-96"/>
                     </div>
                     <div class="flex items-center justify-end md:flex-1 lg:w-0">
-                        <a href="#" class="block md:hidden">
+                        <button @click="openMenu = !openMenu" class="block md:hidden">
                             <div class="space-y-2">
                                 <div class="w-8 h-0.5 bg-primary-blue"></div>
                                 <div class="w-8 h-0.5 bg-primary-blue"></div>
                                 <div class="w-8 h-0.5 bg-primary-blue"></div>
                             </div>
-                        </a>
-                        <a href="#" class="hidden md:block whitespace-nowrap text-base text-4xl font-nordiqueproregular font-light text-primary-blue">07561 633945</a>
+                        </button>
+                        <a href="#" class="hidden md:block whitespace-nowrap text-base text-4xl font-nordiqueproregular font-light text-primary-blue"><img src="assets/mobile/Call-Icon_White.svg" class="inline w-8"/>07561 633945</a>
                     </div>
+                    
+                </div>
+            </div>
+
+            <div x-show="openMenu" @click.away="openMenu = false" class="absolute top-44 mt-2 bg-gradient-to-r from-primary-green via-primary-turquoise to-primary-blue text-white font-nordiqueproregular">
+                <ul class="w-full p-4">
+                    <li class="mb-1 py-4">
+                      <a href="#" class="flex">
+                        <img class="flex-none w-8 h-full" src="assets/mobile/Treatments-Icon_White.svg" />
+                        <span class="ml-4 mt-1 text-xl">Treatments</span>
+                      </a>
+                    </li>
+                    <li class="mb-1 py-4">
+                        <a href="#" class="flex">
+                          <img class="flex-none w-8 h-full" src="assets/mobile/Aftercare-Icon_White.svg" />
+                          <span class="ml-4 text-xl">After Care Advice</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 py-4">
+                        <a href="#" class="flex">
+                          <img class="flex-none w-8 h-full" src="assets/mobile/InTouch-Icon_White.svg" />
+                          <span class="ml-4 text-xl">Get In Touch</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="w-2/3 border-t border-white"></div>
+
+                <div class="flex justify-start ml-8 mt-8 mb-8">
+                    <a href=""><img src="assets/socials/Facebook_White.svg" class="w-8 h-8 mx-2"/></a>
+                    <a href=""><img src="assets/socials/Instagram_White.svg" class="w-8 h-8 mx-2"/></a>
                 </div>
             </div>
 
@@ -55,7 +86,7 @@
                 <div class="block md:hidden">
                     <div class="container mx-auto">
                         <div class="flex justify-center">
-                            <a href="#" class="text-white uppercase px-3 py-2 text-3xl font-normal">07561 633945</a>
+                            <a href="#" class="text-white uppercase px-3 py-2 text-3xl font-normal"><img src="assets/mobile/Call-Icon_White.svg" class="inline-block align-middle w-8"/> 07561 633945</a>
                         </div>
                     </div>
                 </div>
