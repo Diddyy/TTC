@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+    <title>The Therapy Cabin - Poole</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +10,7 @@
     <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
     <link href="../dist/app.css" rel="stylesheet">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
     <style>
         .flickity-viewport {
             height: auto;
@@ -46,7 +47,7 @@
                                 <div class="w-8 h-0.5 bg-primary-blue"></div>
                             </div>
                         </button>
-                        <a href="#" class="hidden md:block whitespace-nowrap text-base text-4xl font-nordiqueproregular font-light text-primary-blue"><img src="assets/mobile/Call-Icon_White.svg" class="inline w-8"/>07561 633945</a>
+                        <a href="tel:07561633945" class="hidden md:block whitespace-nowrap text-4xl font-nordiqueproregular font-light text-primary-blue"><img src="assets/mobile/Call-Icon_White.svg" class="inline w-8"/>07561 633945</a>
                     </div>
                     
                 </div>
@@ -55,13 +56,13 @@
             <div x-show="openMenu" @click.away="openMenu = false" class="absolute top-44 mt-2 bg-gradient-to-r from-primary-green via-primary-turquoise to-primary-blue text-white font-nordiqueproregular">
                 <ul class="w-full p-4">
                     <li class="mb-1 py-4">
-                      <a href="#" class="flex">
+                      <a href="#treatments" class="flex">
                         <img class="flex-none w-8 h-full" src="assets/mobile/Treatments-Icon_White.svg" />
                         <span class="ml-4 mt-1 text-xl">Treatments</span>
                       </a>
                     </li>
                     <li class="mb-1 py-4">
-                        <a href="#" class="flex">
+                        <a href="#aftercare" class="flex">
                           <img class="flex-none w-8 h-full" src="assets/mobile/Aftercare-Icon_White.svg" />
                           <span class="ml-4 text-xl">After Care Advice</span>
                         </a>
@@ -86,7 +87,7 @@
                 <div class="block md:hidden">
                     <div class="container mx-auto">
                         <div class="flex justify-center">
-                            <a href="#" class="text-white uppercase px-3 py-2 text-3xl font-normal"><img src="assets/mobile/Call-Icon_White.svg" class="inline-block align-middle w-8"/> 07561 633945</a>
+                            <a href="tel:07561633945" class="text-white uppercase px-3 py-2 text-3xl font-normal"><img src="assets/mobile/Call-Icon_White.svg" class="inline-block align-middle w-8"/> 07561 633945</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@
                         <div class="flex justify-end">
                             <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Home</a>
                             <a href="#treatments" class="text-white uppercase px-3 py-2 text-sm font-normal">Treatments</a>
-                            <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">After Care Advice</a>
+                            <a href="#aftercare" class="text-white uppercase px-3 py-2 text-sm font-normal">After Care Advice</a>
                             <a href="#" class="text-white uppercase px-3 py-2 text-sm font-normal">Get In Touch</a>
                         </div>
                     </div>
@@ -148,7 +149,7 @@
                                     x-transition:leave-end="opacity-0 transform -translate-y-12">
                                     <h1 class="text-xl md:text-6xl text-white font-nordiqueproregular font-hairline md:mb-6">Enjoy a relaxing</h1>
                                     <span class="font-gizmo text-4xl md:text-6xl text-white ml-8 md:ml-24">treatment</span><br>
-                                    <div class="font-nordiqueproregular text-lg md:text-4xl text-appointment-text ml-8 md:mt-8 md:ml-24">Book an appointment</div>
+                                    <div class="font-nordiqueproregular text-lg md:text-4xl text-appointment-text ml-8 md:mt-8 md:ml-24">Book an appointment</div></a>
                                 </div>
                           </div>
                         </div>
@@ -158,17 +159,17 @@
                           <div class="w-full">
                             <img
                               src="assets/carousel/TTC_Website Carousel_Large1.jpg"
-                              loading="lazy">
+                              >
                           </div>
                           <div class="w-full">
                             <img
                               src="assets/carousel/TTC_Website Carousel_Large2.jpg"
-                              loading="lazy">
+                              >
                           </div>
                           <div class="w-full">
                             <img
                               src="assets/carousel/TTC_Website Carousel_Large3.jpg"
-                              loading="lazy">
+                              >
                           </div>
                         </div>
                       </div>
@@ -368,7 +369,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-4">
+                    <div class="mb-4" id="aftercare">
                         <h2 class="font-gizmo text-primary-turquoise text-6xl font-normal">Aftercare advice</h2>
                         <span>All treatments come with comprehensive advice on follow-up care.</span>
                     </div>
